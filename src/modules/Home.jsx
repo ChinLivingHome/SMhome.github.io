@@ -1,6 +1,6 @@
 import React from "react"
-import { Layout } from 'antd';
-import '../assets/scss/Header.css'
+import { Col, Layout, Row } from 'antd';
+import '../assets/scss/Home.css'
 // import { Col, Row } from 'antd';
 
 const Home = () => {
@@ -8,15 +8,28 @@ const Home = () => {
     return(
         <>
         <Layout>
-            <Header class="header-Bgimage">
-                <div class="header-text">
+            <Header>
+                <Row className="header-bg-image">
+                <div className="header-text">
                     <h1>
                         Chin Living Home
                     </h1>
                 </div>
+                </Row>
             </Header>
             <Content>Content</Content>
-            <Footer>Footer</Footer>
+            <Footer className='footer-bg'>
+                <Row justify="left">
+                    <Col span={18} push={6}>
+                        Tel: 099-607-8908
+                    </Col>
+                </Row>
+                <Row>
+                    <Col span={18} push={6}>
+                        Email: chinnawat.5768@gmail.com
+                    </Col>
+                </Row>
+            </Footer>
         </Layout>
         </>
     )

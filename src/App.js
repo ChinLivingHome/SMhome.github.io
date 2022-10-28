@@ -2,11 +2,11 @@
 import '../src/assets/scss/App.css';
 import Home from '../src/modules/Home'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
+    <>
       <Home/>
-    </div>
+    </>
   );
 }
 
