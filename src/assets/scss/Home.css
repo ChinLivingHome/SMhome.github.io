@@ -27,6 +27,14 @@
   color: lightblue;
 }
 
+.body{
+  padding: 5%;
+}
+
+.body-text{
+  font-size: large;
+}
+
 .footer-bg {
   padding: 5%;
   border-top: 2px solid;
