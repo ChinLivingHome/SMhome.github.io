@@ -3,12 +3,12 @@ import 'antd/dist/antd.min.css'
 import {
     PhoneTwoTone, MailTwoTone, EnvironmentTwoTone,
   } from '@ant-design/icons';
-import { Col, Layout, Row, Typography } from 'antd';
+import { Col, Layout, Row, Typography, Image } from 'antd';
 import '../assets/scss/Home.css'
 
 const Home = () => {
     const { Header, Footer, Content } = Layout;
-    const { Title } = Typography;
+    const { Title, Paragraph } = Typography;
     return(
         <>
         <Layout>
@@ -21,7 +21,16 @@ const Home = () => {
                 </div>
                 </Row>
             </Header>
-            <Content>Content</Content>
+            <Content className="body">
+                <Row>
+                    <Col>
+                    <Image
+                        width={200}
+                        src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+                         />
+                    </Col>
+                </Row>
+            </Content>
             <Footer className='footer-bg'>
                 <Row>
                     <Col span={18}>
@@ -36,7 +45,7 @@ const Home = () => {
                         <Title level={2}><PhoneTwoTone /> 099-607-8908 (ENG), 081-865-8818(TH)</Title>
                     </Col>
                     <Col span={6}>
-                        <Title level={3}><EnvironmentTwoTone /> 165/7 ม.9 ซอยเฉลิมพระเกียรติ 17 ต.หนองปรือ อ.บางละมุง จ.ชลบุรี 20150 ประเทศไทย </Title>
+                        <Paragraph className="body-text"><EnvironmentTwoTone /> 165/7 ม.9 ซอยเฉลิมพระเกียรติ 17 ต.หนองปรือ อ.บางละมุง จ.ชลบุรี 20150 ประเทศไทย </Paragraph>
                     </Col>
                 </Row>
                 <Row>
