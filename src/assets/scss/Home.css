@@ -1,22 +1,35 @@
 .header-bg-image {
-  background-image: url("/src/assets/img/bgImage.jpg");
-  background-size: cover;
+  width: 100%;
   height: 100vh;
-  opacity: 50%;
+  position: relative;
+}
+
+.header-bg-image::before {
+  background-image: url("/src/assets/img/bgImage.jpg");
+  content: "";
+  opacity: 10%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: auto;
+  height: auto;
 }
 
 .header-text {
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: lightblue;
 }
 
 .footer-bg {
+  padding: 5%;
   border-top: 2px solid;
   border-color: black;
-  background-color:rgb(255, 243, 191)
+  background-color: rgb(255, 243, 191);
 }

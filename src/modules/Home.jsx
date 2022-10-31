@@ -1,7 +1,7 @@
 import React from "react"
 import { Col, Layout, Row } from 'antd';
 import '../assets/scss/Home.css'
-// import { Col, Row } from 'antd';
+
 
 const Home = () => {
     const { Header, Footer, Content } = Layout;
