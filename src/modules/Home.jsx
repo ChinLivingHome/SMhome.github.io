@@ -14,11 +14,9 @@ const Home = () => {
         <Layout>
             <Header className="header-bg-image">
                 <Row>
-                <div className="header-text">
-                    <h1>
+                    <h1 className="header-text">
                         Chin Living Home
                     </h1>
-                </div>
                 </Row>
             </Header>
             <Content className="body">
