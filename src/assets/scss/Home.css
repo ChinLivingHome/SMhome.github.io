@@ -30,6 +30,10 @@
   color: white;
 }
 
+.rowSpace {
+  padding: 5%;
+}
+
 .body {
   padding: 5%;
 }
